@@ -4,10 +4,12 @@ import MenuItem from '../menu-item/menu-item.component';
 
 import '../directory/directory.styles.scss';
 
+// Directory class for homepage to direct customer to various pages.
 class Directory extends Component {
     constructor() {
         super();
         this.state = {
+            // database for directory sections
             sections: [
                 {
                     title: 'Drinks',
@@ -41,6 +43,7 @@ class Directory extends Component {
             ]
         };
     }
+    // render method for directory menu items
     render() {
         return (
             <div className="directory-menu">
@@ -52,6 +55,6 @@ class Directory extends Component {
             </div>
         );
     }
-}
+} // end of directory class
 
 export default Directory;
