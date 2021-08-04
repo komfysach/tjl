@@ -9,7 +9,7 @@
     background-color: #f59548;
     color: #100f10;
     text-transform: uppercase;
-    font-family: 'Open Sans Condensed';
+    font-family: 'Montserrat';
     font-weight: bolder;
     border: none;
     cursor: pointer;
@@ -17,5 +17,14 @@
         background-color: #100f10;
         color: #fcf7d9;
         border: 1px solid #f59548;
+    }
+    &.google-sign-in {
+        background-color: #fcf7d9;
+        color: #100f10;
+        &:hover {
+            background-color: #100f10;
+            color: #fcf7d9;
+            border: 1px solid #f59548;
+        }
     }
 }

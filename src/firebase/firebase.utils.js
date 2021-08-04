@@ -2,7 +2,7 @@ import firebase from "firebase/app";
 import 'firebase/firestore';
 import 'firebase/auth';
 
-const config = {
+const firebaseConfig = {
     apiKey: "AIzaSyC6x14YtH1M0M760CW2aENDxsSj5btCqHE",
     authDomain: "the-jagger-lounge.firebaseapp.com",
     projectId: "the-jagger-lounge",
@@ -12,7 +12,8 @@ const config = {
     measurementId: "G-YXTYSQVPKB"
 };
 
-firebase.initializeApp(config);
+firebase.initializeApp(firebaseConfig);
+// firebase.analytics();
 
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
