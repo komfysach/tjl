@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import FormInput from '../form-input/form-input.component';
-import CustomButton from '../custom-button/custom-button.component';
+import Button from '@material-ui/core/Button';
 
 import { signInWithGoogle } from '../../firebase/firebase.utils';
 
@@ -54,10 +54,10 @@ class SignIn extends Component {
                         handleChange={this.handleChange}
                     />
                     <div className="buttons">
-                        <CustomButton className="btn" type='submit' value='Submit Form'> Sign In </CustomButton>
-                        <CustomButton className="btn" onClick={signInWithGoogle} isGoogleSignIn>
+                        <Button className="btn" variant="outlined" color="primary" type='submit' value='Submit Form'> Sign In </Button>
+                        <Button className="btn" variant="outlined" color="primary" onClick={signInWithGoogle} isGoogleSignIn>
                             Sign In With Google
-                        </CustomButton>
+                        </Button>
                     </div>
                 </form>
             </div>

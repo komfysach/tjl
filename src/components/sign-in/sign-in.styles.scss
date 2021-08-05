@@ -29,3 +29,25 @@
     display: flex;
     justify-content: space-between;
 }
+
+.btn {
+    min-width: 165px;
+    width: auto;
+    height: 50px;
+    letter-spacing: 0.5px;
+    line-height: 50px;
+    padding: 0 35px 0 35px;
+    font-size: 15px;
+    background-color: #f59548;
+    color: #100f10;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+    &:hover {
+        background-color: #100f10;
+        color: #fcf7d9;
+        border: 1px solid #f59548;
+    }
+}
