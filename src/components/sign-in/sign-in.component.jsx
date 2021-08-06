@@ -52,6 +52,7 @@ class SignIn extends Component {
                         type='email'
                         default value={this.state.email}
                         handleChange={this.handleChange}
+                        required
                     />
                     <label className="label">Password</label>
                     <FormInput
@@ -60,10 +61,11 @@ class SignIn extends Component {
                         default value={this.state.password}
                         label="password"
                         handleChange={this.handleChange}
+                        required
                     />
                     <div className="buttons">
                         <Button className="btn" variant="outlined" color="primary" type='submit' value='Submit Form'> Sign In </Button>
-                        <Button className="btn" variant="outlined" color="primary" onClick={signInWithGoogle} isGoogleSignIn>
+                        <Button className="btn" variant="outlined" color="primary" type="button" onClick={signInWithGoogle} isGoogleSignIn>
                             Sign In With Google
                         </Button>
                     </div>
