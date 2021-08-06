@@ -89,8 +89,8 @@ class SignUp extends React.Component {
                     />
                     <label className="label">Confirm Password</label>
                     <FormInput
-                        name='password'
-                        type='confirmPassword'
+                        name='confirmPassword'
+                        type='Password'
                         default value={confirmPassword}
                         handleChange={this.handleChange}
                     />
