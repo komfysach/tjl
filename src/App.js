@@ -5,7 +5,7 @@ import RestaurantPage from './pages/restaurant/restaurant.component';
 import Header from './components/header/header.component';
 import SignInSignUp from './pages/sign-in-sign-up/sign-in-sign-up.component';
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { setCurrentUser } from './redux/user/user.actions';
 
@@ -46,8 +46,11 @@ class App extends React.Component {
           <Route exact path='/' component={HomePage} />
           {/* Route to Food Page Component*/}
           <Route path='/restaurant' component={RestaurantPage} />
-          {/* Route to Sign In and Sign Up Page Component*/}
-          <Route path='/signin' component={SignInSignUp} />
+          {/* Route to Sign In and Sign Up Page Component | Redirects is user is signed in*/}
+          <Route exact path='/signin' render={() =>
+            this.props.currentUser ?
+              (<Redirect to='/' />) :
+              (<SignInSignUp />)} />
         </Switch>
       </div>
     );
@@ -55,8 +58,15 @@ class App extends React.Component {
   }
 }
 
+const mapStateToProps = ({ user }) => ({
+  currentUser: user.currentUser
+})
+
 const mapDispatchToProps = dispatch => ({
   setCurrentUser: user => dispatch(setCurrentUser(user))
 });
 
-export default connect(null, mapDispatchToProps)(App);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(App);
