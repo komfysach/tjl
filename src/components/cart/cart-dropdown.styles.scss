@@ -1,22 +1,41 @@
-.sign-in {
-    justify-content: space-between;
-    width: 380px;
+.cart-dropdown {
+    position: absolute;
+    width: 240px;
+    height: 340px;
     display: flex;
-    flex: 5;
     flex-direction: column;
+    padding: 20px;
+    border: 1px solid #fcf7d9;
+    background-color: #100f10;
+    top: 90px;
+    right: 40px;
+    z-index: 5;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+     ::-webkit-scrollbar {
+        display: none;
+    }
+    .cart-items {
+        height: 240px;
+        display: flex;
+        flex-direction: column;
+        overflow: scroll;
+        color: #fcf7d9;
+    }
     .btn {
         min-width: 165px;
+        margin-top: auto;
         width: auto;
         height: 50px;
         letter-spacing: 0.5px;
         line-height: 50px;
-        padding: 0 35px 0 35px;
         font-size: 15px;
         background-color: #f59548;
         color: #100f10;
         text-transform: uppercase;
         font-family: 'Montserrat';
         font-weight: bolder;
+        font-size: small;
         border: none;
         cursor: pointer;
         &:hover {
@@ -24,26 +43,5 @@
             color: #fcf7d9;
             border: 1px solid #f59548;
         }
-    }
-    .h2 {
-        color: #fcf7d9;
-        margin-top: 5rem;
-    }
-    .span {
-        color: #fcf7d9;
-        flex: 1;
-        margin-top: 5rem;
-        margin-bottom: 5rem;
-        font-weight: bold;
-    }
-    .label {
-        color: #fcf7d9;
-        padding: 10px 0px;
-        text-transform: uppercase;
-        letter-spacing: 0.3rem;
-    }
-    .buttons {
-        display: flex;
-        justify-content: space-between;
     }
 }
