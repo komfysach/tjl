@@ -10,9 +10,12 @@ const FoodPreview = ({ title, items }) => (
         <h1>{title.toUpperCase()}</h1>
         <div className="preview">
             {
-                items.map(({ id, ...otherItemProps }) => (
-                    <FoodItem key={id} {...otherItemProps} />
-                ))
+
+                items
+                    .filter((item, idx) => idx < 4)
+                    .map((item) => (
+                        <FoodItem key={item.id} item={item} />
+                    ))
             }
         </div>
     </div>

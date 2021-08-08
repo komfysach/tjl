@@ -66,7 +66,7 @@ class SignIn extends Component {
                     <div className="buttons">
                         <Button className="btn" variant="outlined" color="primary" type='submit' value='Submit Form'> Sign In </Button>
                         <Button className="btn" variant="outlined" color="primary" type="button" onClick={signInWithGoogle} isGoogleSignIn>
-                            Sign In With Google
+                            <img className='img' src="https://img.icons8.com/fluency/20/000000/google-logo.png" alt='Google' /> Sign In
                         </Button>
                     </div>
                 </form>

@@ -1,53 +1,49 @@
-    .sign-up {
-        display: flex;
-        flex-direction: column;
-        width: 380px;
-        flex: 1;
-    }
-    
-    .h2 {
-        color: #fcf7d9;
-        margin-top: 5rem;
-    }
-    
-    .span {
-        color: #fcf7d9;
-        flex: 1;
-        margin-top: 5rem;
-        margin-bottom: 5rem;
-        font-weight: bold;
-    }
-    
-    .label {
-        color: #fcf7d9;
-        padding: 10px 0px;
-        text-transform: uppercase;
-        letter-spacing: 0.3rem;
-    }
-    
-    .buttons {
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    .btn {
-        min-width: 165px;
-        width: auto;
-        height: 50px;
-        letter-spacing: 0.5px;
-        line-height: 50px;
-        padding: 0 35px 0 35px;
-        font-size: 15px;
-        background-color: #f59548;
-        color: #100f10;
-        text-transform: uppercase;
-        font-family: 'Montserrat';
-        font-weight: bolder;
-        border: none;
-        cursor: pointer;
-        &:hover {
-            background-color: #100f10;
-            color: #fcf7d9;
-            border: 1px solid #f59548;
+        .sign-up {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 380px;
+            flex: 1;
+            .buttons {
+                display: flex;
+                justify-content: space-between;
+            }
+            .btn {
+                min-width: 165px;
+                width: auto;
+                height: 50px;
+                letter-spacing: 0.5px;
+                line-height: 50px;
+                padding: 0 35px 0 35px;
+                font-size: 15px;
+                background-color: #f59548;
+                color: #100f10;
+                text-transform: uppercase;
+                font-family: 'Montserrat';
+                font-weight: bolder;
+                border: none;
+                cursor: pointer;
+                &:hover {
+                    background-color: #100f10;
+                    color: #fcf7d9;
+                    border: 1px solid #f59548;
+                }
+            }
+            .h2 {
+                color: #fcf7d9;
+                margin-top: 5rem;
+            }
+            .span {
+                color: #fcf7d9;
+                flex: 1;
+                margin-top: 5rem;
+                margin-bottom: 5rem;
+                font-weight: bold;
+            }
+            .label {
+                color: #fcf7d9;
+                padding: 10px 0px;
+                text-transform: uppercase;
+                letter-spacing: 0.3rem;
+            }
         }
-    }

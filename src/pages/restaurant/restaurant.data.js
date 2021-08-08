@@ -79,55 +79,55 @@ const RESTAURANT_DATA = [
         routeName: 'drinks',
         items: [
             {
-                id: 1,
+                id: 12,
                 name: 'Beer',
                 imageUrl: 'https://firebasestorage.googleapis.com/v0/b/the-jagger-lounge.appspot.com/o/beer.jpg?alt=media&token=da7f5650-da4a-4671-996f-0aa5ace8d715',
                 price: 30
             },
             {
-                id: 2,
+                id: 13,
                 name: 'Whiskey',
                 imageUrl: 'https://firebasestorage.googleapis.com/v0/b/the-jagger-lounge.appspot.com/o/whiskey.jpg?alt=media&token=34b17474-8e1e-4f27-965d-e15014130932',
                 price: 40
             },
             {
-                id: 3,
+                id: 14,
                 name: 'Brandy',
                 imageUrl: 'https://firebasestorage.googleapis.com/v0/b/the-jagger-lounge.appspot.com/o/brandy.jpg?alt=media&token=e6993fdf-c373-4d33-b19f-3bc557cadfab',
                 price: 40
             },
             {
-                id: 4,
+                id: 15,
                 name: 'Cider',
                 imageUrl: 'https://firebasestorage.googleapis.com/v0/b/the-jagger-lounge.appspot.com/o/cider.jpg?alt=media&token=755db9e0-aed3-4955-a910-35cd2a481eb5',
                 price: 30
             },
             {
-                id: 5,
+                id: 16,
                 name: 'Vodka',
                 imageUrl: 'https://firebasestorage.googleapis.com/v0/b/the-jagger-lounge.appspot.com/o/vodka.jpg?alt=media&token=b6322562-d296-4fb3-889e-391e0d484d9c',
                 price: 40
             },
             {
-                id: 6,
+                id: 17,
                 name: 'Daquiri',
                 imageUrl: 'https://firebasestorage.googleapis.com/v0/b/the-jagger-lounge.appspot.com/o/daquiri.jpg?alt=media&token=5831aee5-1330-4a72-8bee-d8a2570b3e49',
                 price: 65
             },
             {
-                id: 7,
+                id: 18,
                 name: 'Mojito',
                 imageUrl: 'https://firebasestorage.googleapis.com/v0/b/the-jagger-lounge.appspot.com/o/mojito.jpg?alt=media&token=1444d00d-e9d0-4dd0-8b45-d5e54ec4f369',
                 price: 65
             },
             {
-                id: 8,
+                id: 19,
                 name: 'Gin',
                 imageUrl: 'https://firebasestorage.googleapis.com/v0/b/the-jagger-lounge.appspot.com/o/gin.jpg?alt=media&token=6eafbf46-ca49-4291-be84-480fc526ca29',
                 price: 40
             },
             {
-                id: 9,
+                id: 20,
                 name: 'Sex On The Beach',
                 imageUrl: 'https://firebasestorage.googleapis.com/v0/b/the-jagger-lounge.appspot.com/o/sex-on-the-beach.jpg?alt=media&token=4a548fca-edc4-4feb-ae08-525a215047cd',
                 price: 40
