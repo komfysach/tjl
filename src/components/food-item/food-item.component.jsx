@@ -16,7 +16,7 @@ const FoodItem = ({ item, addItem }) => {
             />
             <div className="food-footer">
                 <span className='name'>{name}</span>
-                <span className='price'>{price}</span>
+                <span className='price'>R{price}</span>
             </div>
             <Button onClick={() => addItem(item)} className='btn' variant="outlined" color="primary" type="button">Add</Button>
         </div>
