@@ -1,5 +1,5 @@
-const RESTAURANT_DATA = [
-    {
+const RESTAURANT_DATA = {
+    food: {
         id: 1,
         title: 'Food',
         routeName: 'food',
@@ -73,7 +73,7 @@ const RESTAURANT_DATA = [
 
         ]
     },
-    {
+    drinks: {
         id: 2,
         title: 'Drinks',
         routeName: 'drinks',
@@ -135,6 +135,6 @@ const RESTAURANT_DATA = [
         ]
     }
 
-]
+}
 
 export default RESTAURANT_DATA;

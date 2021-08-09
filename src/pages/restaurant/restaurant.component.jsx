@@ -1,30 +1,18 @@
 import React from 'react'
-
-import RESTAURANT_DATA from './restaurant.data.js';
+import { Route } from 'react-router-dom';
 
 import '../../components/preview-food/food-preview.component';
-import FoodPreview from '../../components/preview-food/food-preview.component';
+import CollectionsOverview from '../../components/collections-overview/collections-overview.component';
+import CollectionPage from '../collection/collection.component';
 
-// Declares Restaurant page class
-class RestuarantPage extends React.Component {
-    constructor(props) {
-        super(props);
+const RestaurantPage = ({ match }) => {
+    return (
+        <div className='restaurant-page'>
+            <Route exact path={`${match.path}`} component={CollectionsOverview} />
+            <Route path={`${match.path}/:collectionId`} component={CollectionPage} />
+        </div>
+    )
+};
 
-        this.state = {
-            collections: RESTAURANT_DATA
-        };
-    }
-    // renders restaurant page
-    render() {
-        const { collections } = this.state;
-        return (<div className='restaurant-page'>
-            {
-                collections.map(({ id, ...otherCollectionProps }) => (
-                    <FoodPreview key={id} {...otherCollectionProps} />
-                ))
-            }
-        </div>);
-    }
-}// end of Restaurant page class
 
-export default RestuarantPage;
+export default RestaurantPage;
