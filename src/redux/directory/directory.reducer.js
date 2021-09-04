@@ -6,7 +6,7 @@ const INITIAL_STATE = {
             size: 'small',
             id: 1,
             cta: 'BOOK NOW',
-            linkUrl: 'restaurant/bookings'
+            linkUrl: 'bookings'
         },
         {
             title: 'Entertainment',

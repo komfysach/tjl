@@ -9,6 +9,7 @@ import { selectCurrentUser } from './redux/user/user.selectors';
 import { createStructuredSelector } from 'reselect';
 // Pages
 import HomePage from './pages/homepage/homepage.component';
+import BookingsPage from './pages/bookings/bookings.component';
 import RestaurantPage from './pages/restaurant/restaurant.component';
 import Header from './components/header/header.component';
 import SignInSignUp from './pages/sign-in-sign-up/sign-in-sign-up.component';
@@ -49,6 +50,8 @@ class App extends React.Component {
         <Switch>
           {/* Route to Home Page Component*/}
           <Route exact path='/' component={HomePage} />
+          {/* Route to Bookings Page Component*/}
+          <Route exact path='/bookings' component={BookingsPage} />
           {/* Route to Food Page Component*/}
           <Route path='/restaurant' component={RestaurantPage} />
           {/* Route to Checkout Page Component*/}
